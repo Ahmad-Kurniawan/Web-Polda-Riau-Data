@@ -1,8 +1,13 @@
 import { PolresData } from '../types';
-import { inhuCompanies } from './Company';
+import { inhuCompanies } from './inhu';
 import { rohulCompanies } from './Rohul';
 import { KamparCompanies } from './Kampar';
 import { PelalawanCompanies } from './Pelalawan';
+import { PKUCompanies } from './PKU';
+import { siakCompanies } from './siak';
+import { KuansingCompanies } from './Kuansing';
+import { bengkaliscompanies } from  './bengkalis'
+import { inhilcompanies } from './inhil';
 
 export const datapolres: PolresData[] = [
     {
@@ -33,7 +38,7 @@ export const datapolres: PolresData[] = [
         monokulturTarget: 7216.48,
         tumpangSariTarget: 25257.66,
         totalTarget: 32474.14,
-        companies: inhuCompanies
+        companies: inhilcompanies
     },
     {
         id: 4,
@@ -43,7 +48,7 @@ export const datapolres: PolresData[] = [
         monokulturTarget: 2647.36,
         tumpangSariTarget: 9265.77,
         totalTarget: 11913.13,
-        companies: inhuCompanies
+        companies: PKUCompanies
     },
     {
         id: 5,
@@ -53,7 +58,7 @@ export const datapolres: PolresData[] = [
         monokulturTarget: 1498.07,
         tumpangSariTarget: 5243.25,
         totalTarget: 6741.33,
-        companies: inhuCompanies
+        companies: bengkaliscompanies
     },
     {
         id: 6,
@@ -73,7 +78,7 @@ export const datapolres: PolresData[] = [
         monokulturTarget: 1664.20,
         tumpangSariTarget: 5824.70,
         totalTarget: 7488.90,
-        companies: inhuCompanies
+        companies: rohulCompanies
     },
     {
         id: 8,
@@ -83,7 +88,7 @@ export const datapolres: PolresData[] = [
         monokulturTarget: 2042.11,
         tumpangSariTarget: 7147.40,
         totalTarget: 9189.51,
-        companies: inhuCompanies
+        companies: siakCompanies
     },
     {
         id: 9,
@@ -93,7 +98,7 @@ export const datapolres: PolresData[] = [
         monokulturTarget: 1486.10,
         tumpangSariTarget: 5201.34,
         totalTarget: 6687.44,
-        companies: inhuCompanies
+        companies: KuansingCompanies
     },
     {
         id: 10,
@@ -113,7 +118,7 @@ export const datapolres: PolresData[] = [
         monokulturTarget: 0,
         tumpangSariTarget: 0,
         totalTarget: 3245.00,
-        companies: inhuCompanies
+        companies: []
     },
     {
         id: 12,
@@ -123,6 +128,6 @@ export const datapolres: PolresData[] = [
         monokulturTarget: 0,
         tumpangSariTarget: 0,
         totalTarget: 287.50,
-        companies: inhuCompanies
+        companies: []
     }
 ];

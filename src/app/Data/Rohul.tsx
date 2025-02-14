@@ -762,7 +762,7 @@ export const rohulCompanies: Company[] = [
   },
   {
     id: 24,
-    name: "PT. GRAMA PERMATA IMAD",
+    name: "PT. GRAHA PERMATA HIJAU",
     area: 3264.2,
     target2Percent: 65.2,
     target7Percent: 228.49,
@@ -795,7 +795,7 @@ export const rohulCompanies: Company[] = [
   },
   {
     id: 25,
-    name: "PT. INTAN SEJATI ANDALAN",
+    name: "PT. HUTAHEAN",
     area: 12313.97,
     target2Percent: 246.28,
     target7Percent: 861.98,

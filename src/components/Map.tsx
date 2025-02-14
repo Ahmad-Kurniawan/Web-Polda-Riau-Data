@@ -4,6 +4,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { Badge } from "@/components/ui/badge";
 import { PolresData } from "@/app/types";
+import { useRef } from "react";
 
 const pinIconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
@@ -26,6 +27,9 @@ interface MapComponentProps {
 }
 
 const MapComponent = ({ data, onPolresSelect }: MapComponentProps) => {
+  // Create refs for each marker
+  const markerRefs = useRef<{ [key: string]: L.Marker | null }>({});
+
   return (
     <MapContainer 
       center={[0.5070677, 101.5401725]}
@@ -44,6 +48,23 @@ const MapComponent = ({ data, onPolresSelect }: MapComponentProps) => {
           icon={customIcon}
           eventHandlers={{
             click: () => onPolresSelect(polres),
+            mouseover: (e) => {
+              const marker = markerRefs.current[polres.id];
+              if (marker) {
+                marker.openPopup();
+              }
+            },
+            mouseout: (e) => {
+              const marker = markerRefs.current[polres.id];
+              if (marker) {
+                marker.closePopup();
+              }
+            }
+          }}
+          ref={(ref) => {
+            if (ref) {
+              markerRefs.current[polres.id] = ref;
+            }
           }}
         >
           <Popup className="rounded-xl shadow-xl bg-white">
