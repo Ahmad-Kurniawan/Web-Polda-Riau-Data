@@ -8,14 +8,12 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { Building2, Map, Target, TargetIcon, Sprout } from "lucide-react";
+import { Building2, Map, TargetIcon, Sprout } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import dynamic from "next/dynamic";
 import {
   Table,
   TableBody,
-  TableCell,
-  TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";

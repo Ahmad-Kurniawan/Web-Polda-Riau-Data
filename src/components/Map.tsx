@@ -31,7 +31,7 @@ const MapComponent = ({ data, onPolresSelect }: MapComponentProps) => {
   const markerRefs = useRef<{ [key: string]: L.Marker | null }>({});
 
   return (
-    <MapContainer 
+    <MapContainer
       center={[0.5070677, 101.5401725]}
       zoom={8}
       className="w-full h-full z-0"
@@ -48,18 +48,18 @@ const MapComponent = ({ data, onPolresSelect }: MapComponentProps) => {
           icon={customIcon}
           eventHandlers={{
             click: () => onPolresSelect(polres),
-            mouseover: (e) => {
+            mouseover: () => {
               const marker = markerRefs.current[polres.id];
               if (marker) {
                 marker.openPopup();
               }
             },
-            mouseout: (e) => {
+            mouseout: () => {
               const marker = markerRefs.current[polres.id];
               if (marker) {
                 marker.closePopup();
               }
-            }
+            },
           }}
           ref={(ref) => {
             if (ref) {
@@ -82,9 +82,7 @@ const MapComponent = ({ data, onPolresSelect }: MapComponentProps) => {
                   </Badge>
                 </div>
                 <div className="flex items-center gap-2 bg-gray-50 p-2.5 rounded-lg border border-gray-200">
-                  <span className="text-sm text-gray-600">
-                    Luas Lahan:
-                  </span>
+                  <span className="text-sm text-gray-600">Luas Lahan:</span>
                   <span className="font-bold text-gray-900">
                     {polres.totalArea} Ha
                   </span>
