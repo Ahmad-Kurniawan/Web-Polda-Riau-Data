@@ -1,14 +1,14 @@
 import { PolresData } from '../types';
 import { inhuCompanies } from './Company';
 import { rohulCompanies } from './Rohul';
-
-
+import { KamparCompanies } from './Kampar';
+import { PelalawanCompanies } from './Pelalawan';
 
 export const datapolres: PolresData[] = [
     {
         id: 1,
         nama: "INDRAGIRI HULU",
-        coordinates: [0.7361, 102.2547],
+        coordinates: [-0.5062587626567405, 102.22070185428481],
         totalArea: 156157.69,
         monokulturTarget: 3123.15,
         tumpangSariTarget: 10931.04,
@@ -23,7 +23,7 @@ export const datapolres: PolresData[] = [
         monokulturTarget: 2849.75,
         tumpangSariTarget: 9974.11,
         totalTarget: 12823.86,
-        companies: inhuCompanies
+        companies: KamparCompanies
     },
     {
         id: 3,
@@ -63,7 +63,7 @@ export const datapolres: PolresData[] = [
         monokulturTarget: 3462.29,
         tumpangSariTarget: 12118.01,
         totalTarget: 15580.30,
-        companies: inhuCompanies
+        companies: PelalawanCompanies
     },
     {
         id: 7,
@@ -109,9 +109,19 @@ export const datapolres: PolresData[] = [
         id: 11,
         nama: "KEPULAUAN MERANTI",
         coordinates: [0.8850, 102.6500],
-        totalArea: 3245.00,
-        monokulturTarget: 64.90,
-        tumpangSariTarget: 227.15,
+        totalArea: 0,
+        monokulturTarget: 0,
+        tumpangSariTarget: 0,
+        totalTarget: 3245.00,
+        companies: inhuCompanies
+    },
+    {
+        id: 12,
+        nama: "DUMAI",
+        coordinates: [1.6627197743147384, 101.39805017115371],
+        totalArea: 0,
+        monokulturTarget: 0,
+        tumpangSariTarget: 0,
         totalTarget: 287.50,
         companies: inhuCompanies
     }
