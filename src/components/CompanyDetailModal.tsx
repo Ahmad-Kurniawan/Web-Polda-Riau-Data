@@ -14,7 +14,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Building2, Target } from "lucide-react";
+import { Building2, Target, Heart, Sprout } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -29,6 +29,8 @@ import {
   Line,
   Legend,
   Label,
+  AreaChart,
+  Area,
 } from "recharts";
 import { Company } from "@/app/types";
 
@@ -49,16 +51,15 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
   const transformPeriodData = () => {
     return (['I', 'II', 'III', 'IV'] as const).map(period => ({
       periode: period,
-      // Monokultur data
-      monoTarget: company.monokulturTargets[period as keyof typeof company.monokulturTargets],
-      monoAchievement: company.monokulturAchievements[period as keyof typeof company.monokulturAchievements],
-      // Tumpang Sari data
-      tsTarget: company.tumpangSariTargets[period as keyof typeof company.tumpangSariTargets],
-      tsAchievement: company.tumpangSariAchievements[period as keyof typeof company.tumpangSariAchievements],
+      monoTarget: company.monokulturTargets[period],
+      monoAchievement: company.monokulturAchievements[period],
+      tsTarget: company.tumpangSariTargets[period],
+      tsAchievement: company.tumpangSariAchievements[period],
     }));
   };
 
   const periodData = transformPeriodData();
+
 
   // Data for pie chart
   const targetDistribution = [
@@ -83,7 +84,7 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-6xl">
+      <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
             <Building2 className="w-5 h-5 text-blue-500" />
@@ -91,15 +92,13 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
           </DialogTitle>
         </DialogHeader>
 
+
         <Tabs defaultValue="overview" className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
+          <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="Progress Monokultur">
-              Progress Monokultur
-            </TabsTrigger>
-            <TabsTrigger value="Progress Tumpang Sari">
-              Progress Tumpang Sari
-            </TabsTrigger>
+            <TabsTrigger value="Progress Monokultur">Monokultur</TabsTrigger>
+            <TabsTrigger value="Progress Tumpang Sari">Tumpang Sari</TabsTrigger>
+            <TabsTrigger value="csr">CSR</TabsTrigger>
           </TabsList>
 
           <TabsContent value="overview">
@@ -126,7 +125,7 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                                         {payload[0].name}
                                       </span>
                                       <span className="font-bold text-muted-foreground">
-                                      {(Number(payload[0]?.value) ?? 0).toFixed(2)} Ha
+                                        {(Number(payload[0]?.value) ?? 0).toFixed(2)} Ha
                                       </span>
                                     </div>
                                   </div>
@@ -146,11 +145,7 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                         >
                           <Label
                             content={({ viewBox }) => {
-                              if (
-                                viewBox &&
-                                "cx" in viewBox &&
-                                "cy" in viewBox
-                              ) {
+                              if (viewBox && "cx" in viewBox && "cy" in viewBox) {
                                 return (
                                   <text
                                     x={viewBox.cx}
@@ -223,11 +218,7 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                         </span>
                       </div>
                       <span className="text-sm font-medium">
-                        {(
-                          company.area -
-                          (company.target2Percent + company.target7Percent)
-                        ).toFixed(2)}{" "}
-                        Ha
+                        {(company.area - (company.target2Percent + company.target7Percent)).toFixed(2)} Ha
                       </span>
                     </div>
                   </div>
@@ -295,8 +286,7 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                 <CardFooter className="flex-col items-start gap-2 text-sm">
                   <div className="flex gap-2 font-medium leading-none">
                     <Target className="h-4 w-4" />
-                    Target Total:{" "}
-                    {(company.target2Percent + company.target7Percent).toFixed(2)} Ha
+                    Target Total: {(company.target2Percent + company.target7Percent).toFixed(2)} Ha
                   </div>
                   <div className="leading-none text-muted-foreground">
                     Menampilkan target per periode
@@ -377,6 +367,49 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                         dataKey="tsTarget"
                         name="Target"
                         stroke="#8b5cf6"
+                        strokeDasharray="5 5"
+                      />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </div>
+              </CardContent>
+              <CardFooter className="flex-col items-start gap-2 text-sm">
+                <div className="flex gap-2 font-medium leading-none">
+                  <Target className="h-4 w-4" />
+                  Total Target Tumpang Sari: {company.target7Percent.toFixed(2)} Ha
+                </div>
+              </CardFooter>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="csr">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-sm font-medium text-gray-500">
+                  Progress Tumpang Sari per Periode
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="h-[400px]">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <LineChart data={periodData}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="periode" />
+                      <YAxis />
+                      <Tooltip />
+                      <Legend />
+                      <Line
+                        type="monotone"
+                        dataKey="tsAchievement"
+                        name="Pencapaian"
+                        stroke="#3b82f6"
+                        strokeWidth={2}
+                      />
+                      <Line
+                        type="monotone"
+                        dataKey="tsTarget"
+                        name="Target"
+                        stroke="red"
                         strokeDasharray="5 5"
                       />
                     </LineChart>

@@ -5,6 +5,7 @@ export interface Company {
   target2Percent: number;
   target7Percent: number;
   
+  
   // Monokultur targets per quarter
   monokulturTargets: {
       I: number;
@@ -36,9 +37,9 @@ export interface Company {
     III: number;
     IV: number;
   };
-  
   status: number;
   csr: number;
+  
 }
 
 export interface PolresData {
@@ -50,4 +51,6 @@ export interface PolresData {
   tumpangSariTarget: number;
   totalTarget: number;
   companies: Company[];
+  societies: Company[];
 }
+
