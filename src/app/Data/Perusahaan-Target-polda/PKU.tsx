@@ -31,8 +31,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 37.0,
+    csrAchievements: {
+      I: 37.0,
+      II: 37.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 2,
@@ -64,8 +68,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 18.0,
+    csrAchievements: {
+      I: 18.0,
+      II: 18.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 3,
@@ -97,8 +105,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 18.0,
+    csrAchievements: {
+      I: 18.0,
+      II: 18.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 4,
@@ -130,8 +142,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 57.0,
+    csrAchievements: {
+      I: 57.0,
+      II: 57.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 5,
@@ -163,8 +179,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 302.0,
+    csrAchievements: {
+      I: 302.0,
+      II: 302.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 6,
@@ -196,8 +216,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 7,
@@ -229,8 +253,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 8,
@@ -262,8 +290,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 9,
@@ -295,8 +327,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 10,
@@ -328,8 +364,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 11,
@@ -361,8 +401,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 12,
@@ -394,8 +438,12 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 13,
@@ -427,7 +475,11 @@ export const PKUCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
 ];

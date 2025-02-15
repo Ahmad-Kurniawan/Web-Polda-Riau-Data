@@ -15,7 +15,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 4.0,
-      II: 0.0,
+      II: 4.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -31,8 +31,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 2,
@@ -41,14 +45,14 @@ export const PelalawanCompanies: Company[] = [
     target2Percent: 12.74,
     target7Percent: 44.59,
     monokulturTargets: {
-      I: 3.19,
-      II: 3.19,
-      III: 3.19,
-      IV: 3.19,
+      I: 3.18,
+      II: 3.18,
+      III: 3.18,
+      IV: 3.18,
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 2.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -64,8 +68,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 3,
@@ -93,12 +101,16 @@ export const PelalawanCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 5.0,
+      II: 5.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 4,
@@ -114,7 +126,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -130,8 +142,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 5,
@@ -159,12 +175,16 @@ export const PelalawanCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 1.49,
+      II: 1.49,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 6,
@@ -196,8 +216,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 7,
@@ -213,7 +237,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 3.0,
-      II: 0.0,
+      II: 5.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -229,8 +253,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 8,
@@ -262,8 +290,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 9,
@@ -279,7 +311,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 1.5,
       III: 0.0,
       IV: 0.0,
     },
@@ -295,8 +327,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 10,
@@ -312,7 +348,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 2.0,
-      II: 0.0,
+      II: 2.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -328,8 +364,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 11,
@@ -345,7 +385,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -361,8 +401,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 12,
@@ -378,7 +422,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 2.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -394,8 +438,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 13,
@@ -427,8 +475,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 14,
@@ -444,7 +496,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 1.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -460,8 +512,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 15,
@@ -489,12 +545,16 @@ export const PelalawanCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 5.0,
+      II: 5.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 16,
@@ -510,7 +570,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -526,8 +586,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 17,
@@ -559,8 +623,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 18,
@@ -592,8 +660,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 19,
@@ -621,12 +693,16 @@ export const PelalawanCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 1.0,
+      II: 1.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 20,
@@ -642,7 +718,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 10.0,
-      II: 0.0,
+      II: 10.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -658,15 +734,19 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 21,
     name: "PT. PESAWOAN RAYA",
     area: 625.5,
     target2Percent: 12.51,
-    target7Percent: 43.79,
+    target7Percent: 43.78,
     monokulturTargets: {
       I: 3.13,
       II: 3.13,
@@ -687,12 +767,16 @@ export const PelalawanCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 2.0,
+      II: 2.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 22,
@@ -708,7 +792,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 1.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -724,8 +808,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 23,
@@ -757,8 +845,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 24,
@@ -786,12 +878,16 @@ export const PelalawanCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 6.0,
+      II: 7.6,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 25,
@@ -819,12 +915,16 @@ export const PelalawanCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 6.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 26,
@@ -840,7 +940,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 4.0,
-      II: 0.0,
+      II: 12.5,
       III: 0.0,
       IV: 0.0,
     },
@@ -856,8 +956,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 27,
@@ -873,7 +977,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 3.0,
-      II: 0.0,
+      II: 3.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -889,8 +993,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 28,
@@ -906,7 +1014,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 1.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -922,8 +1030,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 29,
@@ -951,12 +1063,16 @@ export const PelalawanCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 3.0,
+      II: 3.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 30,
@@ -972,7 +1088,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 20.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -988,8 +1104,12 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 31,
@@ -1005,7 +1125,7 @@ export const PelalawanCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 29.0,
-      II: 0.0,
+      II: 5.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -1021,7 +1141,11 @@ export const PelalawanCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
 ];

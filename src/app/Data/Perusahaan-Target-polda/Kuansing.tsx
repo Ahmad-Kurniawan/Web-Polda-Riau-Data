@@ -1,6 +1,6 @@
-import { Company } from "../../types";
+import { Company } from "@/app/types";
 
-export const KuansingCompanies: Company[] = [
+export const kuansingCompanies: Company[] = [
   {
     id: 1,
     name: "PT. BANGUN PERSADA TATA MAKMUR TAKE OVER PT. SANDRIA SUKSES BERSAMA",
@@ -15,7 +15,7 @@ export const KuansingCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 4.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -27,12 +27,16 @@ export const KuansingCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 14.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 2,
@@ -48,7 +52,7 @@ export const KuansingCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 178.58,
       III: 0.0,
       IV: 0.0,
     },
@@ -60,12 +64,16 @@ export const KuansingCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 625.03,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 3,
@@ -81,7 +89,7 @@ export const KuansingCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 1.0,
-      II: 0.0,
+      II: 240.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -93,12 +101,16 @@ export const KuansingCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 5.0,
+      II: 840.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 4,
@@ -114,7 +126,7 @@ export const KuansingCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 284.74,
       III: 0.0,
       IV: 0.0,
     },
@@ -126,12 +138,16 @@ export const KuansingCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 996.59,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 5,
@@ -147,7 +163,7 @@ export const KuansingCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 23.7,
       III: 0.0,
       IV: 0.0,
     },
@@ -159,12 +175,16 @@ export const KuansingCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 82.95,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 6,
@@ -180,7 +200,7 @@ export const KuansingCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 2.0,
-      II: 0.0,
+      II: 72.06,
       III: 0.0,
       IV: 0.0,
     },
@@ -192,12 +212,16 @@ export const KuansingCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 2.0,
+      II: 252.2,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 7,
@@ -213,7 +237,7 @@ export const KuansingCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 200.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -225,12 +249,16 @@ export const KuansingCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 700.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 8,
@@ -246,7 +274,7 @@ export const KuansingCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 22.78,
       III: 0.0,
       IV: 0.0,
     },
@@ -258,12 +286,16 @@ export const KuansingCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 79.73,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 9,
@@ -279,7 +311,7 @@ export const KuansingCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 83.92,
       III: 0.0,
       IV: 0.0,
     },
@@ -291,12 +323,16 @@ export const KuansingCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 293.72,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 10,
@@ -312,7 +348,7 @@ export const KuansingCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 376.32,
       III: 0.0,
       IV: 0.0,
     },
@@ -324,11 +360,15 @@ export const KuansingCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 2.0,
+      II: 1317.12,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
 ];

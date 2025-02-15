@@ -31,8 +31,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 2,
@@ -64,8 +68,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 3,
@@ -97,8 +105,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 4,
@@ -114,7 +126,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 10.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -130,8 +142,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 5,
@@ -147,7 +163,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -163,8 +179,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 6,
@@ -192,12 +212,16 @@ export const KamparCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 5.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 7,
@@ -225,12 +249,16 @@ export const KamparCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 2.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 8,
@@ -262,8 +290,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 9,
@@ -291,12 +323,16 @@ export const KamparCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 15.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 10,
@@ -312,7 +348,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 4.25,
       III: 0.0,
       IV: 0.0,
     },
@@ -328,8 +364,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 11,
@@ -361,8 +401,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 12,
@@ -394,8 +438,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 13,
@@ -423,12 +471,16 @@ export const KamparCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 2.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 14,
@@ -460,8 +512,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 15,
@@ -493,8 +549,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 16,
@@ -526,8 +586,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 17,
@@ -543,7 +607,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 2.0,
-      II: 0.0,
+      II: 2.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -555,12 +619,16 @@ export const KamparCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 1.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 18,
@@ -576,7 +644,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 2.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -592,8 +660,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 19,
@@ -625,8 +697,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 20,
@@ -658,8 +734,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 21,
@@ -687,12 +767,16 @@ export const KamparCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 1.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 22,
@@ -724,8 +808,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 23,
@@ -757,8 +845,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 24,
@@ -790,8 +882,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 25,
@@ -823,8 +919,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 26,
@@ -856,8 +956,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 27,
@@ -889,8 +993,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 28,
@@ -922,8 +1030,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 29,
@@ -955,8 +1067,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 30,
@@ -972,7 +1088,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -984,12 +1100,16 @@ export const KamparCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 3.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 31,
@@ -1021,8 +1141,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 32,
@@ -1054,8 +1178,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 33,
@@ -1071,7 +1199,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 1.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -1083,12 +1211,16 @@ export const KamparCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 1.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 34,
@@ -1120,8 +1252,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 35,
@@ -1153,8 +1289,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 36,
@@ -1186,8 +1326,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 37,
@@ -1219,8 +1363,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 38,
@@ -1252,8 +1400,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 39,
@@ -1285,8 +1437,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 40,
@@ -1318,8 +1474,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 41,
@@ -1351,8 +1511,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 42,
@@ -1384,8 +1548,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 43,
@@ -1401,7 +1569,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 2.0,
-      II: 0.0,
+      II: 2.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -1417,8 +1585,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 44,
@@ -1450,8 +1622,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 45,
@@ -1483,8 +1659,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 46,
@@ -1500,7 +1680,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -1516,8 +1696,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 47,
@@ -1549,8 +1733,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 48,
@@ -1582,8 +1770,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 49,
@@ -1615,8 +1807,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 50,
@@ -1648,8 +1844,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 51,
@@ -1681,8 +1881,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 52,
@@ -1714,8 +1918,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 53,
@@ -1747,8 +1955,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 54,
@@ -1764,7 +1976,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 1.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -1780,8 +1992,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 55,
@@ -1813,8 +2029,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 56,
@@ -1846,8 +2066,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 57,
@@ -1863,7 +2087,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -1879,8 +2103,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 58,
@@ -1908,12 +2136,16 @@ export const KamparCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 14.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 59,
@@ -1945,8 +2177,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 60,
@@ -1962,7 +2198,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 2.0,
-      II: 0.0,
+      II: 2.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -1978,8 +2214,12 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 61,
@@ -1995,7 +2235,7 @@ export const KamparCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 0.1,
       III: 0.0,
       IV: 0.0,
     },
@@ -2011,7 +2251,11 @@ export const KamparCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
 ];

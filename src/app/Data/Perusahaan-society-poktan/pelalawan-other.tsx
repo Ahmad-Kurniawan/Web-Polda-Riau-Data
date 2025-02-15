@@ -1,0 +1,165 @@
+import { Company } from "../../types";
+
+export const pelalawanOther: Company[] = [
+  {
+    id: 1,
+    name: "POKTAN NH5",
+    area: 10000.0,
+    monokulturAchievements: {
+      I: 1.0,
+      II: 1.0,
+      III: 0,
+      IV: 0,
+    },
+    tumpangSariAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0,
+      IV: 0,
+    },
+    csrAchievements: {
+      I: 0,
+      II: 0,
+      III: 0,
+      IV: 0,
+    },
+  },
+  {
+    id: 2,
+    name: "PT. GANDAHERA ",
+    area: 7797.0,
+    monokulturAchievements: {
+      I: 3.43,
+      II: 3.43,
+      III: 0,
+      IV: 0,
+    },
+    tumpangSariAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0,
+      IV: 0,
+    },
+    csrAchievements: {
+      I: 0,
+      II: 0,
+      III: 0,
+      IV: 0,
+    },
+  },
+  {
+    id: 3,
+    name: "PT. GANDAHERA ",
+    area: 7797.0,
+    monokulturAchievements: {
+      I: 1.0,
+      II: 1.0,
+      III: 0,
+      IV: 0,
+    },
+    tumpangSariAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0,
+      IV: 0,
+    },
+    csrAchievements: {
+      I: 0,
+      II: 0,
+      III: 0,
+      IV: 0,
+    },
+  },
+  {
+    id: 4,
+    name: "PT. PUSAKA MEGAH BUMI NUSANTARA",
+    area: 7062.7,
+    monokulturAchievements: {
+      I: 10.0,
+      II: 10.0,
+      III: 0,
+      IV: 0,
+    },
+    tumpangSariAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0,
+      IV: 0,
+    },
+    csrAchievements: {
+      I: 0,
+      II: 0,
+      III: 0,
+      IV: 0,
+    },
+  },
+  {
+    id: 5,
+    name: "PT. KARYA PANEN TERUS",
+    area: 0.0,
+    monokulturAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0,
+      IV: 0,
+    },
+    tumpangSariAchievements: {
+      I: 0.7,
+      II: 0.7,
+      III: 0,
+      IV: 0,
+    },
+    csrAchievements: {
+      I: 0,
+      II: 0,
+      III: 0,
+      IV: 0,
+    },
+  },
+  {
+    id: 6,
+    name: "PT. TH INDO PLANTATION",
+    area: 5180.39,
+    monokulturAchievements: {
+      I: 25.0,
+      II: 25.0,
+      III: 0,
+      IV: 0,
+    },
+    tumpangSariAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0,
+      IV: 0,
+    },
+    csrAchievements: {
+      I: 0,
+      II: 0,
+      III: 0,
+      IV: 0,
+    },
+  },
+  {
+    id: 7,
+    name: "PT. RAPP",
+    area: 0.0,
+    monokulturAchievements: {
+      I: 5.0,
+      II: 5.0,
+      III: 0,
+      IV: 0,
+    },
+    tumpangSariAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0,
+      IV: 0,
+    },
+    csrAchievements: {
+      I: 0,
+      II: 0,
+      III: 0,
+      IV: 0,
+    },
+  },
+];

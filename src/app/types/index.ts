@@ -2,45 +2,41 @@ export interface Company {
   id: number;
   name: string;
   area: number;
-  target2Percent: number;
-  target7Percent: number;
-  
-  
-  // Monokultur targets per quarter
-  monokulturTargets: {
-      I: number;
-      II: number;
-      III: number;
-      IV: number;
+  target2Percent?: number;
+  target7Percent?: number;
+  monokulturTargets?: {
+    I: number;
+    II: number;
+    III: number;
+    IV: number;
   };
-  
-  // Monokultur achievements per quarter
   monokulturAchievements: {
     I: number;
     II: number;
     III: number;
     IV: number;
   };
-  
-  // Tumpang sari targets per quarter
-  tumpangSariTargets: {
+  tumpangSariTargets?: {
     I: number;
     II: number;
     III: number;
     IV: number;
   };
-  
-  // Tumpang sari achievements per quarter
   tumpangSariAchievements: {
     I: number;
     II: number;
     III: number;
     IV: number;
   };
-  status: number;
-  csr: number;
-  
+  csrAchievements?: {
+    I: number;
+    II: number;
+    III: number;
+    IV: number;
+  };
+  progress?: Progress[];
 }
+
 
 export interface PolresData {
   id: number;
@@ -51,6 +47,77 @@ export interface PolresData {
   tumpangSariTarget: number;
   totalTarget: number;
   companies: Company[];
-  societies: Company[];
+  otherCompanies: Company[];
+
 }
+
+export interface Progress {
+  id: number;
+  namaPJ: string;
+  nomorTelp: string;
+  area: number;
+  coordinates: number;
+  photo: number;
+  monokultur: {
+    targetTanam: {
+      luas: number;
+      persentase: number;
+    };
+    waktuTanam: string;
+    progresTanam: {
+      luas: number;
+      persentase: number;
+    };
+    belumTanam: {
+      luas: number;
+      persentase: number;
+    };
+    panen: {
+      luas: number;
+      persentase: number;
+    };
+    keterangan: string;
+  };
+  tumpangSari: {
+    targetTanam: {
+      luas: number;
+      persentase: number;
+    };
+    waktuTanam: string;
+    progresTanam: {
+      luas: number;
+      persentase: number;
+    };
+    belumTanam: {
+      luas: number;
+      persentase: number;
+    };
+    panen: {
+      luas: number;
+      persentase: number;
+    };
+    keterangan: string;
+  };
+  csr: {
+    targetTanam: {
+      luas: number;
+      persentase: number;
+    };
+    waktuTanam: string;
+    progresTanam: {
+      luas: number;
+      persentase: number;
+    };
+    belumTanam: {
+      luas: number;
+      persentase: number;
+    };
+    panen: {
+      luas: number;
+      persentase: number;
+    };
+    keterangan: string;
+  };
+}
+
 

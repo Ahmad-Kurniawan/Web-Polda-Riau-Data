@@ -47,17 +47,17 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
 
   // Transform period data for charts
   const transformPeriodData = () => {
-    return (['I', 'II', 'III', 'IV'] as const).map(period => ({
+    return (["I", "II", "III", "IV"] as const).map((period) => ({
       periode: period,
-      monoTarget: company.monokulturTargets[period],
-      monoAchievement: company.monokulturAchievements[period],
-      tsTarget: company.tumpangSariTargets[period],
-      tsAchievement: company.tumpangSariAchievements[period],
+      monoTarget: company.monokulturTargets?.[period],
+      monoAchievement: company.monokulturAchievements?.[period],
+      tsTarget: company.tumpangSariTargets?.[period],
+      tsAchievement: company.tumpangSariAchievements?.[period],
+      csrAchievement: company.csrAchievements?.[period],
     }));
   };
 
   const periodData = transformPeriodData();
-
 
   // Data for pie chart
   const targetDistribution = [
@@ -73,12 +73,128 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
     },
     {
       name: "Lahan Yang Tersisa",
-      value: company.area - (company.target2Percent + company.target7Percent),
+      value:
+        typeof company.target2Percent === "number" &&
+        typeof company.target7Percent === "number"
+          ? company.area - (company.target2Percent + company.target7Percent)
+          : undefined,
       fill: "hsl(var(--chart-3))",
     },
   ];
-
   const totalArea = company.area;
+
+  // const renderProgressSection = (
+  //   title: string,
+  //   data: {
+  //     targetTanam: { luas: number; persentase: number };
+  //     waktuTanam: string;
+  //     progresTanam: { luas: number; persentase: number };
+  //     belumTanam: { luas: number; persentase: number };
+  //     panen: { luas: number; persentase: number };
+  //     keterangan: string;
+  //   }
+  // ) => {
+  //   const progressData = [
+  //     {
+  //       name: "Sudah Tanam",
+  //       value: data.progresTanam.persentase,
+  //       luas: data.progresTanam.luas,
+  //       fill: "#22c55e"
+  //     },
+  //     {
+  //       name: "Belum Tanam",
+  //       value: data.belumTanam.persentase,
+  //       luas: data.belumTanam.luas,
+  //       fill: "#ef4444"
+  //     },
+  //     {
+  //       name: "Panen",
+  //       value: data.panen.persentase,
+  //       luas: data.panen.luas,
+  //       fill: "#eab308"
+  //     }
+  //   ];
+
+  //   return (
+  //     <Card className="w-full">
+  //       <CardHeader>
+  //         <CardTitle className="text-sm font-medium text-gray-500">
+  //           Progress {title}
+  //         </CardTitle>
+  //         <CardDescription>
+  //           Target Tanam: {data.targetTanam.luas.toFixed(2)} Ha ({data.targetTanam.persentase.toFixed(2)}%)
+  //         </CardDescription>
+  //       </CardHeader>
+  //       <CardContent>
+  //         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+  //           <div className="h-[300px]">
+  //             <ResponsiveContainer width="100%" height="100%">
+  //               <PieChart>
+  //                 <Pie
+  //                   data={progressData}
+  //                   dataKey="value"
+  //                   nameKey="name"
+  //                   cx="50%"
+  //                   cy="50%"
+  //                   innerRadius={60}
+  //                   outerRadius={80}
+  //                   label
+  //                 />
+  //                 <Tooltip
+  //                   content={({ active, payload }) => {
+  //                     if (active && payload && payload.length) {
+  //                       const data = payload[0].payload;
+  //                       return (
+  //                         <div className="rounded-lg border bg-background p-2 shadow-sm">
+  //                           <div className="grid grid-cols-2 gap-2">
+  //                             <div className="flex flex-col">
+  //                               <span className="text-[0.70rem] uppercase text-muted-foreground">
+  //                                 {data.name}
+  //                               </span>
+  //                               <span className="font-bold">
+  //                                 {data.value.toFixed(2)}% ({data.luas.toFixed(2)} Ha)
+  //                               </span>
+  //                             </div>
+  //                           </div>
+  //                         </div>
+  //                       );
+  //                     }
+  //                     return null;
+  //                   }}
+  //                 />
+  //                 <Legend />
+  //               </PieChart>
+  //             </ResponsiveContainer>
+  //           </div>
+  //           <div className="flex flex-col gap-4">
+  //             <div className="flex items-center gap-2">
+  //               <Calendar className="h-4 w-4 text-gray-500" />
+  //               <span className="text-sm">Waktu Tanam: {data.waktuTanam}</span>
+  //             </div>
+  //             <div className="space-y-3">
+  //               <div className="flex justify-between text-sm">
+  //                 <span className="text-muted-foreground">Sudah Tanam</span>
+  //                 <span className="font-medium">{data.progresTanam.luas.toFixed(2)} Ha ({data.progresTanam.persentase.toFixed(2)}%)</span>
+  //               </div>
+  //               <div className="flex justify-between text-sm">
+  //                 <span className="text-muted-foreground">Belum Tanam</span>
+  //                 <span className="font-medium">{data.belumTanam.luas.toFixed(2)} Ha ({data.belumTanam.persentase.toFixed(2)}%)</span>
+  //               </div>
+  //               <div className="flex justify-between text-sm">
+  //                 <span className="text-muted-foreground">Panen</span>
+  //                 <span className="font-medium">{data.panen.luas.toFixed(2)} Ha ({data.panen.persentase.toFixed(2)}%)</span>
+  //               </div>
+  //             </div>
+  //             <div className="mt-4">
+  //               <h4 className="text-sm font-medium mb-2">Keterangan:</h4>
+  //               <p className="text-sm text-muted-foreground">{data.keterangan}</p>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </CardContent>
+  //     </Card>
+  //   );
+  // };
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -90,13 +206,12 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
           </DialogTitle>
         </DialogHeader>
 
-
         <Tabs defaultValue="overview" className="w-full">
           <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="Progress Monokultur">Monokultur</TabsTrigger>
-            <TabsTrigger value="Progress Tumpang Sari">Tumpang Sari</TabsTrigger>
+            <TabsTrigger value="progress">Progress Mono & TS</TabsTrigger>
             <TabsTrigger value="csr">CSR</TabsTrigger>
+            <TabsTrigger value="ProgressTanam">Progress Tanam</TabsTrigger>
           </TabsList>
 
           <TabsContent value="overview">
@@ -123,7 +238,10 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                                         {payload[0].name}
                                       </span>
                                       <span className="font-bold text-muted-foreground">
-                                        {(Number(payload[0]?.value) ?? 0).toFixed(2)} Ha
+                                        {(
+                                          Number(payload[0]?.value) ?? 0
+                                        ).toFixed(2)}{" "}
+                                        Ha
                                       </span>
                                     </div>
                                   </div>
@@ -143,7 +261,11 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                         >
                           <Label
                             content={({ viewBox }) => {
-                              if (viewBox && "cx" in viewBox && "cy" in viewBox) {
+                              if (
+                                viewBox &&
+                                "cx" in viewBox &&
+                                "cy" in viewBox
+                              ) {
                                 return (
                                   <text
                                     x={viewBox.cx}
@@ -188,7 +310,7 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                         </span>
                       </div>
                       <span className="text-sm font-medium">
-                        {company.target2Percent.toFixed(2)} Ha
+                        {company.target2Percent?.toFixed(2)} Ha
                       </span>
                     </div>
                     <div className="flex items-center justify-between">
@@ -202,7 +324,7 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                         </span>
                       </div>
                       <span className="text-sm font-medium">
-                        {company.target7Percent.toFixed(2)} Ha
+                        {company.target7Percent?.toFixed(2)} Ha
                       </span>
                     </div>
                     <div className="flex items-center justify-between">
@@ -216,7 +338,11 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                         </span>
                       </div>
                       <span className="text-sm font-medium">
-                        {(company.area - (company.target2Percent + company.target7Percent)).toFixed(2)} Ha
+                        {(
+                          company.area -
+                          (company.target2Percent ?? 0 + (company.target7Percent ?? 0))
+                        ).toFixed(2)}{" "}
+                        Ha
                       </span>
                     </div>
                   </div>
@@ -284,107 +410,106 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                 <CardFooter className="flex-col items-start gap-2 text-sm">
                   <div className="flex gap-2 font-medium leading-none">
                     <Target className="h-4 w-4" />
-                    Target Total: {(company.target2Percent + company.target7Percent).toFixed(2)} Ha
-                  </div>
-                  <div className="leading-none text-muted-foreground">
-                    Menampilkan target per periode
+                    Target Total:{" "}
+                    {(company.area - (company.target2Percent ?? 0 + (company.target7Percent ?? 0))).toFixed(2)}
+                    Ha
                   </div>
                 </CardFooter>
               </Card>
             </div>
           </TabsContent>
 
-          <TabsContent value="Progress Monokultur">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-sm font-medium text-gray-500">
-                  Progress Monokultur per Periode
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="h-[400px]">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <LineChart data={periodData}>
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="periode" />
-                      <YAxis />
-                      <Tooltip />
-                      <Legend />
-                      <Line
-                        type="monotone"
-                        dataKey="monoAchievement"
-                        name="Pencapaian"
-                        stroke="#3b82f6"
-                        strokeWidth={2}
-                      />
-                      <Line
-                        type="monotone"
-                        dataKey="monoTarget"
-                        name="Target"
-                        stroke="#22c55e"
-                        strokeDasharray="5 5"
-                      />
-                    </LineChart>
-                  </ResponsiveContainer>
-                </div>
-              </CardContent>
-              <CardFooter className="flex-col items-start gap-2 text-sm">
-                <div className="flex gap-2 font-medium leading-none">
-                  <Target className="h-4 w-4" />
-                  Total Target Monokultur: {company.target2Percent.toFixed(2)} Ha
-                </div>
-              </CardFooter>
-            </Card>
-          </TabsContent>
+          <TabsContent value="progress">
+            <div className="grid grid-cols-2 gap-4">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-sm font-medium text-gray-500">
+                    Progress Monokultur per Periode
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="h-[400px]">
+                    <ResponsiveContainer width="100%" height="100%">
+                      <LineChart data={periodData}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="periode" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Line
+                          type="monotone"
+                          dataKey="monoAchievement"
+                          name="Pencapaian"
+                          stroke="#3b82f6"
+                          strokeWidth={2}
+                        />
+                        <Line
+                          type="monotone"
+                          dataKey="monoTarget"
+                          name="Target"
+                          stroke="#22c55e"
+                          strokeDasharray="5 5"
+                        />
+                      </LineChart>
+                    </ResponsiveContainer>
+                  </div>
+                </CardContent>
+                <CardFooter className="flex-col items-start gap-2 text-sm">
+                  <div className="flex gap-2 font-medium leading-none">
+                    <Target className="h-4 w-4" />
+                    Total Target Monokultur: {company.target2Percent?.toFixed(2)} Ha
+                  </div>
+                </CardFooter>
+              </Card>
 
-          <TabsContent value="Progress Tumpang Sari">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-sm font-medium text-gray-500">
-                  Progress Tumpang Sari per Periode
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="h-[400px]">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <LineChart data={periodData}>
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="periode" />
-                      <YAxis />
-                      <Tooltip />
-                      <Legend />
-                      <Line
-                        type="monotone"
-                        dataKey="tsAchievement"
-                        name="Pencapaian"
-                        stroke="#3b82f6"
-                        strokeWidth={2}
-                      />
-                      <Line
-                        type="monotone"
-                        dataKey="tsTarget"
-                        name="Target"
-                        stroke="#8b5cf6"
-                        strokeDasharray="5 5"
-                      />
-                    </LineChart>
-                  </ResponsiveContainer>
-                </div>
-              </CardContent>
-              <CardFooter className="flex-col items-start gap-2 text-sm">
-                <div className="flex gap-2 font-medium leading-none">
-                  <Target className="h-4 w-4" />
-                  Total Target Tumpang Sari: {company.target7Percent.toFixed(2)} Ha
-                </div>
-              </CardFooter>
-            </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-sm font-medium text-gray-500">
+                    Progress Tumpang Sari per Periode
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="h-[400px]">
+                    <ResponsiveContainer width="100%" height="100%">
+                      <LineChart data={periodData}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="periode" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Line
+                          type="monotone"
+                          dataKey="tsAchievement"
+                          name="Pencapaian"
+                          stroke="#3b82f6"
+                          strokeWidth={2}
+                        />
+                        <Line
+                          type="monotone"
+                          dataKey="tsTarget"
+                          name="Target"
+                          stroke="#8b5cf6"
+                          strokeDasharray="5 5"
+                        />
+                      </LineChart>
+                    </ResponsiveContainer>
+                  </div>
+                </CardContent>
+                <CardFooter className="flex-col items-start gap-2 text-sm">
+                  <div className="flex gap-2 font-medium leading-none">
+                    <Target className="h-4 w-4" />
+                    Total Target Tumpang Sari: {company.target7Percent?.toFixed(2)} Ha
+                  </div>
+                </CardFooter>
+              </Card>
+            </div>
           </TabsContent>
 
           <TabsContent value="csr">
             <Card>
               <CardHeader>
                 <CardTitle className="text-sm font-medium text-gray-500">
-                  Progress Tumpang Sari per Periode
+                  Progress CSR per Periode
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -398,14 +523,14 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
                       <Legend />
                       <Line
                         type="monotone"
-                        dataKey="tsAchievement"
+                        dataKey="csrAchievement"
                         name="Pencapaian"
                         stroke="#3b82f6"
                         strokeWidth={2}
                       />
                       <Line
                         type="monotone"
-                        dataKey="tsTarget"
+                        dataKey="csrTarget"
                         name="Target"
                         stroke="red"
                         strokeDasharray="5 5"
@@ -417,11 +542,44 @@ const CompanyDetailsModal: React.FC<CompanyDetailsModalProps> = ({
               <CardFooter className="flex-col items-start gap-2 text-sm">
                 <div className="flex gap-2 font-medium leading-none">
                   <Target className="h-4 w-4" />
-                  Total Target Tumpang Sari: {company.target7Percent.toFixed(2)} Ha
+                  Total Capaian CSR: {Object.values(company.csrAchievements || {}).reduce((acc, val) => acc + val, 0).toFixed(2)} Ha
                 </div>
               </CardFooter>
             </Card>
           </TabsContent>
+
+          {/* <TabsContent value="ProgressTanam">
+            <div className="space-y-4">
+              <Card className="w-full">
+                <CardHeader>
+                  <CardTitle className="text-sm font-medium">
+                    Informasi Penanggung Jawab
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="flex items-center gap-2">
+                      <User className="h-4 w-4 text-gray-500" />
+                      <span className="text-sm">PJ: {company.progress?.namaPJ}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-gray-500" />
+                      <span className="text-sm">Telp: {company.progress?.nomorTelp}</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {company.progress?.monokultur && 
+                renderProgressSection("Monokultur", company.progress.monokultur)}
+              
+              {company.progress?.tumpangSari && 
+                renderProgressSection("Tumpang Sari", company.progress.tumpangSari)}
+              
+              {company.progress?.csr && 
+                renderProgressSection("CSR", company.progress.csr)}
+            </div>
+          </TabsContent> */}
         </Tabs>
       </DialogContent>
     </Dialog>

@@ -298,7 +298,7 @@ const RiauDashboard = () => {
                   </CardTitle>
                   {selectedPolres && (
                     <CardDescription>
-                      Total {selectedPolres.societies?.length || 0} Perusahaan society/poktan
+                      Total {selectedPolres.otherCompanies?.length || 0} Perusahaan society/poktan
                     </CardDescription>
                   )}
                 </CardHeader>
@@ -306,15 +306,16 @@ const RiauDashboard = () => {
                   <ScrollArea className="h-[400px]">
                     {selectedPolres ? (
                       <div className="p-6">
-                        {selectedPolres.societies && selectedPolres.societies.length > 0 ? (
+                        {selectedPolres.otherCompanies && selectedPolres.otherCompanies.length > 0 ? (
                           <Table>
                             <TableHeader>
                             </TableHeader>
                             <TableBody>
-                              {selectedPolres.societies.map((society) => (
+                              {selectedPolres.otherCompanies.map((society) => (
                                 <TableRow
                                   key={society.id}
                                   className="border-b hover:bg-blue-50/50 cursor-pointer transition-colors"
+                                  onClick={() => handleCompanyClick(society)}
                                 >
                                   <motion.td
                                     className="p-4 font-medium"

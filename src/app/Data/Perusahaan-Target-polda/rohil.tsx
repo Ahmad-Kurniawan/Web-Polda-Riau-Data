@@ -31,8 +31,12 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 2,
@@ -48,7 +52,7 @@ export const rohilCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 1.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -64,8 +68,12 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 3,
@@ -81,7 +89,7 @@ export const rohilCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 2.0,
-      II: 0.0,
+      II: 2.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -97,8 +105,12 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 4,
@@ -130,8 +142,12 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 5,
@@ -147,7 +163,7 @@ export const rohilCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 6.0,
-      II: 0.0,
+      II: 6.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -163,8 +179,12 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 6,
@@ -192,12 +212,16 @@ export const rohilCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 20.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 7,
@@ -213,7 +237,7 @@ export const rohilCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 1.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -229,8 +253,12 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 8,
@@ -246,7 +274,7 @@ export const rohilCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 0.0,
-      II: 0.0,
+      II: 0.02,
       III: 0.0,
       IV: 0.0,
     },
@@ -262,8 +290,12 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 9,
@@ -279,7 +311,7 @@ export const rohilCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 10.0,
-      II: 0.0,
+      II: 10.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -295,8 +327,12 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 10,
@@ -328,8 +364,12 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 11,
@@ -345,7 +385,7 @@ export const rohilCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 5.0,
-      II: 0.0,
+      II: 15.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -357,12 +397,16 @@ export const rohilCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 5.0,
+      II: 3.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 12,
@@ -378,7 +422,7 @@ export const rohilCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 1.0,
-      II: 0.0,
+      II: 1.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -394,8 +438,12 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
   {
     id: 13,
@@ -423,12 +471,16 @@ export const rohilCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 1.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 14,
@@ -456,12 +508,16 @@ export const rohilCompanies: Company[] = [
     },
     tumpangSariAchievements: {
       I: 0.0,
+      II: 2.0,
+      III: 0.0,
+      IV: 0.0,
+    },
+    csrAchievements: {
+      I: 0.0,
       II: 0.0,
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
   },
   {
     id: 15,
@@ -477,7 +533,7 @@ export const rohilCompanies: Company[] = [
     },
     monokulturAchievements: {
       I: 2.0,
-      II: 0.0,
+      II: 2.0,
       III: 0.0,
       IV: 0.0,
     },
@@ -493,7 +549,11 @@ export const rohilCompanies: Company[] = [
       III: 0.0,
       IV: 0.0,
     },
-    status: 0,
-    csr: 0.0,
+    csrAchievements: {
+      I: 0.0,
+      II: 0.0,
+      III: 0.0,
+      IV: 0.0,
+    },
   },
 ];
