@@ -14,7 +14,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Building2, Target, Heart, Sprout } from "lucide-react";
+import { Building2, Target } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -29,8 +29,6 @@ import {
   Line,
   Legend,
   Label,
-  AreaChart,
-  Area,
 } from "recharts";
 import { Company } from "@/app/types";
 

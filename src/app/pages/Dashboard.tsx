@@ -63,18 +63,6 @@ const RiauDashboard = () => {
     },
   };
 
-  const tableRowVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-      },
-    },
-  };
-
   const getTotalStats = () => {
     return datapolres.reduce(
       (acc, polres) => ({
@@ -109,8 +97,6 @@ const RiauDashboard = () => {
     setSelectedCompany(null);
   };
 
-
-
   return (
     <div className="min-h-screen relative bg-[#f8fafc]">
       {/* Background elements remain the same */}
@@ -127,7 +113,7 @@ const RiauDashboard = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="flex flex-col gap-6">
-        <motion.div
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -176,9 +162,9 @@ const RiauDashboard = () => {
                 icon: TargetIcon,
                 gradient: "from-green-400 to-emerald-500",
               },
-            ].map((stat, index) => (
+            ].map((stat) => (
               <MotionCard
-                key={index}
+                key={stat.title}
                 variants={cardVariants}
                 className={`bg-gradient-to-r ${stat.gradient} text-white rounded-xl shadow-lg hover:shadow-xl transition-all backdrop-blur-sm`}
                 whileHover={{ scale: 1.02 }}
@@ -204,8 +190,7 @@ const RiauDashboard = () => {
             ))}
           </motion.div>
 
-          
-          {/* Full-width Map */}
+          {/* Map and Tables sections remain the same */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -232,9 +217,7 @@ const RiauDashboard = () => {
             </Card>
           </motion.div>
 
-          {/* Two Tables Side by Side */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Companies Table */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -263,7 +246,7 @@ const RiauDashboard = () => {
                             <TableHeader>
                             </TableHeader>
                             <TableBody>
-                              {selectedPolres.companies.map((company, index) => (
+                              {selectedPolres.companies.map((company) => (
                                 <TableRow
                                   key={company.id}
                                   className="border-b hover:bg-blue-50/50 cursor-pointer transition-colors"
@@ -300,7 +283,6 @@ const RiauDashboard = () => {
               </Card>
             </motion.div>
 
-            {/* Society/Poktan Table */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -329,7 +311,7 @@ const RiauDashboard = () => {
                             <TableHeader>
                             </TableHeader>
                             <TableBody>
-                              {selectedPolres.societies.map((society, index) => (
+                              {selectedPolres.societies.map((society) => (
                                 <TableRow
                                   key={society.id}
                                   className="border-b hover:bg-blue-50/50 cursor-pointer transition-colors"
